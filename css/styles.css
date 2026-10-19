@@ -284,3 +284,8 @@ strong { font-weight: 600; }
   .site-header.is-scrolled .brand-emblem { height: 32px; }
   .footer-grid { flex-direction: column; align-items: flex-start; }
 }
+
+/* Filosofía: degradado suave para integrar la foto con el fondo */
+.philosophy-media::after { content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, rgba(15,41,36,.18) 0%, rgba(15,41,36,0) 30%, rgba(250,248,243,0) 70%, var(--cream) 100%); }
+.philosophy-media img { object-position: center 65%; }
