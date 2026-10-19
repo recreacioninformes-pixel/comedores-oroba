@@ -13,8 +13,12 @@
   <meta property="og:title" content="Comedores Oroba | Alimentación que impulsa cada jornada">
   <meta property="og:description" content="Soluciones de alimentación para empresas, centros de trabajo y entornos institucionales.">
   <meta property="og:url" content="https://www.tudominio.com/">
-  <meta property="og:image" content="assets/img/og.jpg">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:image" content="https://www.tudominio.com/assets/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +30,7 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "COMEDORES OROBA, S.A. DE C.V.",
+    "logo": "https://www.tudominio.com/assets/logo/oroba-logo.png",
     "description": "Soluciones de alimentación para comedores industriales, empresariales e institucionales, alimentación para eventos empresariales y catering."
   }
   </script>
@@ -36,13 +41,14 @@
   <header class="site-header" id="top">
     <div class="container header-inner">
       <a href="#inicio" class="brand" aria-label="Comedores Oroba, ir al inicio">
-        <span class="brand-mark" aria-hidden="true">O</span>
-        <span class="brand-text">Comedores <strong>Oroba</strong></span>
+        <img class="brand-emblem" src="assets/logo/oroba-emblema.webp" alt="" width="420" height="355">
+        <img class="brand-word" src="assets/logo/oroba-wordmark.webp" alt="Comedores Oroba" width="700" height="176">
       </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
         <span></span><span></span>
       </button>
       <nav id="menu" class="nav" aria-label="Principal">
+        <img class="nav-emblem" src="assets/logo/oroba-emblema.webp" alt="" aria-hidden="true" width="420" height="355">
         <a href="#inicio">Inicio</a>
         <a href="#nosotros">Nosotros</a>
         <a href="#servicios">Servicios</a>
@@ -55,6 +61,7 @@
   <main id="contenido">
     <!-- 1. HERO -->
     <section class="hero" id="inicio">
+      <img class="hero-watermark" src="assets/logo/oroba-emblema.webp" alt="" aria-hidden="true" width="420" height="355">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
           <p class="eyebrow">Soluciones integrales de alimentación</p>
@@ -65,8 +72,9 @@
             <a href="#contacto" class="btn btn-outline-light">Solicita información</a>
           </div>
         </div>
-        <figure class="hero-media media reveal" data-label="Comedor empresarial moderno · 1600×1200">
-          <img src="assets/img/hero.jpg" alt="Comedor empresarial moderno con colaboradores" width="1600" height="1200" fetchpriority="high">
+        <figure class="hero-media media reveal" data-label="">
+          <img class="hero-logo" src="assets/logo/oroba-logo.webp" alt="" aria-hidden="true" width="900" height="731">
+          <img class="hero-photo" src="assets/img/hero.jpg" alt="Comedor empresarial moderno con colaboradores" width="1600" height="1200" fetchpriority="high">
         </figure>
       </div>
     </section>
@@ -253,11 +261,12 @@
 
   <!-- 7. FOOTER -->
   <footer class="site-footer">
+    <div class="container footer-brand">
+      <img class="footer-logo" src="assets/logo/oroba-logo.webp" alt="Comedores Oroba — Alimentación institucional de alto nivel" width="900" height="731" loading="lazy">
+      <p class="footer-tag">Alimentación que acompaña los momentos importantes.</p>
+    </div>
     <div class="container footer-grid">
-      <div>
-        <p class="footer-name">COMEDORES OROBA, S.A. DE C.V.</p>
-        <p class="footer-tag">Alimentación que acompaña los momentos importantes.</p>
-      </div>
+      <p class="footer-name">COMEDORES OROBA, S.A. DE C.V.</p>
       <nav class="footer-nav" aria-label="Pie de página">
         <a href="#inicio">Inicio</a>
         <a href="#nosotros">Nosotros</a>

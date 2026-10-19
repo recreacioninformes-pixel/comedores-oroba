@@ -61,7 +61,7 @@ Funciona igual con Web3Forms, Getform o Basin (cualquier servicio que acepte `PO
 - [ ] Texto del aviso de privacidad en `aviso-de-privacidad.html` (el formulario recoge datos personales, así que es necesario).
 - [ ] URL del formulario (`data-endpoint`).
 - [ ] Dominio en `index.html`, `robots.txt` y `sitemap.xml`.
-- [ ] Logotipo oficial, si existe: reemplaza el bloque `.brand` del encabezado y `assets/favicon.svg`.
+- [x] Logotipo integrado (archivos en `assets/logo/`: versión completa, emblema y nombre, en PNG y WebP con fondo transparente).
 
 ## Editar
 

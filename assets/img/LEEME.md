@@ -9,7 +9,7 @@ Coloca aquí las fotos con **exactamente estos nombres**. Mientras no existan, l
 | eventos.jpg    | Servicio 02 – Eventos empresariales    | 1200 × 800      |
 | catering.jpg   | Servicio 03 – Catering                 | 1200 × 800      |
 | filosofia.jpg  | Sección "Nuestra filosofía" (amplia)   | 2400 × 1200     |
-| og.jpg         | Vista previa al compartir en redes     | 1200 × 630      |
+| og.jpg         | Vista previa al compartir (ya incluida con el logo; puedes reemplazarla) | 1200 × 630 |
 
 Consejos: JPG de calidad 75–80 %, idealmente menos de 300 KB cada una (puedes comprimir en squoosh.app).
 Fuentes gratuitas con licencia comercial: unsplash.com, pexels.com.
