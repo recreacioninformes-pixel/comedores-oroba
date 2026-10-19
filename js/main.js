@@ -118,13 +118,22 @@
     button.disabled = true;
     setStatus('Enviando…');
 
+    var data = {};
+    new FormData(form).forEach(function (value, key) { data[key] = value; });
+    data.privacidad = data.privacidad ? 'Aceptado' : '';
+    if (data._honey) return; // spam
+
     fetch(endpoint, {
       method: 'POST',
-      body: new FormData(form),
-      headers: { 'Accept': 'application/json' }
+      body: JSON.stringify(data),
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
     })
       .then(function (res) {
-        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return res.json().catch(function () { return {}; }).then(function (json) {
+          if (!res.ok || json.success === false || json.success === 'false') throw new Error('envío');
+        });
+      })
+      .then(function () {
         form.reset();
         setStatus('Gracias. Recibimos tu solicitud y te contactaremos.', 'ok');
       })

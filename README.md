@@ -59,7 +59,7 @@ Funciona igual con Web3Forms, Getform o Basin (cualquier servicio que acepte `PO
 
 - [ ] Fotografías en `assets/img/` (nombres en `LEEME.md`).
 - [ ] Texto del aviso de privacidad en `aviso-de-privacidad.html` (el formulario recoge datos personales, así que es necesario).
-- [ ] URL del formulario (`data-endpoint`).
+- [x] Formulario conectado con FormSubmit a contacto@orobacomedores.com (requiere activación con el primer envío).
 - [x] Dominio: www.orobacomedores.com (Cloudflare, archivo `CNAME`).
 - [x] Logotipo integrado (archivos en `assets/logo/`: versión completa, emblema y nombre, en PNG y WebP con fondo transparente).
 

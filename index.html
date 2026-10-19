@@ -233,11 +233,12 @@
 
         <!--
           INTEGRACIÓN DEL FORMULARIO
-          Escribe en data-endpoint la URL de tu servicio (por ejemplo https://formspree.io/f/XXXXXXX).
+          Las solicitudes se envían con FormSubmit (formsubmit.co) al correo contacto@orobacomedores.com.
+          Para cambiar el correo destino, modifica la dirección al final de data-endpoint.
           Mientras esté vacío, el formulario NO envía nada y lo indica al usuario.
           Ver README.md, sección "Conectar el formulario".
         -->
-        <form class="contact-form reveal" id="contact-form" data-endpoint="" novalidate>
+        <form class="contact-form reveal" id="contact-form" data-endpoint="https://formsubmit.co/ajax/contacto@orobacomedores.com" novalidate>
           <div class="field">
             <label for="nombre">Nombre</label>
             <input id="nombre" name="nombre" type="text" autocomplete="name" required>
@@ -273,11 +274,14 @@
             <label for="privacidad">He leído y acepto el <a href="aviso-de-privacidad.html">aviso de privacidad</a>.</label>
           </div>
           <!-- Campo trampa contra spam: no lo llenan las personas -->
-          <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <input type="hidden" name="_subject" value="Nueva solicitud desde orobacomedores.com">
+          <input type="hidden" name="_template" value="table">
           <div class="form-footer field-full">
             <button type="submit" class="btn btn-green">Solicitar información</button>
             <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
           </div>
+          <p class="form-alt field-full">También puedes escribirnos directamente a <a href="mailto:contacto@orobacomedores.com">contacto@orobacomedores.com</a></p>
         </form>
       </div>
     </section>

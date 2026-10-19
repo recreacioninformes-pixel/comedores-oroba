@@ -301,3 +301,5 @@ strong { font-weight: 600; }
 .mail-link:hover { color: var(--gold-600); }
 .footer-address a { color: rgba(255,255,255,.8); text-decoration: none; }
 .footer-address a:hover { color: var(--gold); }
+.form-alt { margin: .4rem 0 0; padding-top: 1.2rem; border-top: 1px solid var(--line); font-size: .92rem; color: var(--muted); }
+.form-alt a { color: var(--green); font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--gold); white-space: nowrap; }
